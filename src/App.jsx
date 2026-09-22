@@ -1,13 +1,13 @@
 import React, { useState, useMemo } from 'react';
 import { Wallet, FlaskConical, RefreshCw } from 'lucide-react';
-import { useOnlineStatus } from './hooks/useOnlineStatus';
-import { useExpenses } from './hooks/useExpenses';
-import { useSync } from './hooks/useSync';
-import ExpenseForm from './components/ExpenseForm';
-import ExpenseList from './components/ExpenseList';
-import SearchFilter from './components/SearchFilter';
-import ConnectionStatus from './components/ConnectionStatus';
-import SyncStatus from './components/SyncStatus';
+import { useOnlineStatus } from './Hooks/useOnlineStatus';
+import { useExpenses } from './Hooks/useExpenses';
+import { useSync } from './Hooks/useSync';
+import ExpenseForm from './Components/ExpenseForm';
+import ExpenseList from './Components/ExpenseList';
+import SearchFilter from './Components/SearchFilter';
+import ConnectionStatus from './Components/ConnectionStatus';
+import SyncStatus from './Components/SyncStatus';
 import { mockApi, simulateServerEdit } from './utils/mockApi';
 
 const App = () => {
