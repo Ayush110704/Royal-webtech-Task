@@ -104,7 +104,7 @@ const App = () => {
   return (
     <div className="flex min-h-screen flex-col bg-slate-100">
       {/* Header */}
-      <header className="bg-gradient-to-br from-indigo-500 via-purple-500 to-purple-700 text-white shadow-md">
+      <header className="bg-black text-white shadow-md">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-4 sm:px-8">
           <h1 className="flex items-center gap-2 text-xl font-bold tracking-tight">
             <Wallet size={22} />
@@ -164,10 +164,10 @@ const App = () => {
               Summary
             </h3>
 
-            <div className="mb-4 flex items-center justify-between rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 px-4 py-3 text-lg font-semibold text-white">
-              <span className="text-sm font-medium opacity-90">Total</span>
-              <strong>${totals.total.toFixed(2)}</strong>
-            </div>
+            <div className="mb-4 flex items-center justify-between rounded-lg bg-black px-4 py-3 text-lg font-semibold text-white">
+  <span className="text-sm font-medium opacity-90">Total</span>
+  <strong>₹{totals.total.toFixed(2)}</strong>
+</div>
 
             <div className="space-y-1">
               {Object.entries(totals.byCategory)
@@ -178,7 +178,7 @@ const App = () => {
                     className="flex justify-between border-b border-dashed border-slate-200 py-1 text-sm text-slate-600 last:border-b-0"
                   >
                     <span>{cat}</span>
-                    <span className="font-medium">${amt.toFixed(2)}</span>
+                    <span className="font-medium">₹{amt.toFixed(2)}</span>
                   </div>
                 ))}
             </div>

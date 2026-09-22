@@ -170,7 +170,7 @@ const ExpenseForm = ({ onSubmit, editingExpense, onCancel }) => {
       <div className="mt-4 flex gap-2">
         <button
           type="submit"
-          className="flex-1 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md active:translate-y-0"
+          className="flex-1 rounded-lg bg-black px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md hover:bg-slate-800 active:translate-y-0"
         >
           {editingExpense ? 'Update' : 'Add Expense'}
         </button>
