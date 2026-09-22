@@ -5,7 +5,7 @@ import {
   deleteExpenseById,
   queueOperation,
   getSyncQueue,
-} from '../storage/localStorage';
+} from '../Storage/localStorage';
 
 const generateId = () =>
   `exp_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;

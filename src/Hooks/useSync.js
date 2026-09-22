@@ -8,7 +8,7 @@ import {
   clearConflicts,
   getExpenses,
   clearSyncQueue,
-} from '../storage/localStorage';
+} from '../Storage/localStorage';
 import { mockApi } from '../utils/mockApi';
 import { detectConflict, resolveConflict } from '../utils/conflictResolver';
 
